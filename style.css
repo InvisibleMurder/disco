@@ -1,0 +1,59 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for text readability */
+}
+
+body {
+    /* More colors for a richer gradient */
+    background: linear-gradient(-45deg, #FF007F, #FFD700, #00FF7F, #00BFFF, #8A2BE2, #FF4500);
+    background-size: 600% 600%; /* Increased size to accommodate more colors and movement */
+    animation: gradientDisco 1s ease infinite; /* Slightly faster, but you can adjust 5s, 8s, or 15s */
+}
+
+@keyframes gradientDisco {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 100%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 0%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* You might want to style your button for better visibility */
+#startButton {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #8A2BE2; /* A nice disco purple */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#startButton:hover {
+    background-color: #6A1BA0; /* Darker shade on hover */
+}
